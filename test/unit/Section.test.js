@@ -64,25 +64,4 @@ describe("section", () => {
     expect(s.getHits()).toEqual(1);
   });
 
-  // test("getAlerts (no alert)", () => {
-  //   const s = new Section("pl");
-  //   expect(s.alerts.length).toEqual(0);
-  //   expect(s.getAlerts()).toEqual("");
-  // });
-  //
-  // test("addAlert", () => {
-  //   const s = new Section("pl");
-  //   s.addAlert("something did wrong !");
-  //   expect(s.alerts.length).toEqual(1);
-  // });
-  //
-  // test("getAlerts (some alerts)", () => {
-  //   const s = new Section("pl");
-  //   s.addAlert(5);
-  //   expect(s.alerts.length).toEqual(1);
-  //   expect(s.getAlerts()).isPrototypeOf(String);
-  //   s.addAlert(10);
-  //   expect(s.alerts.length).toEqual(2);
-  //   expect(s.getAlerts()).isPrototypeOf(String);
-  // });
 });
