@@ -48,6 +48,8 @@ describe("line splitter log", () => {
 });
 
 describe("line splitter getSection", () => {
+  "use strict";
+
   [
     { in: "/test", out: "test" },
     { in: "/test/truc", out: "test" },
