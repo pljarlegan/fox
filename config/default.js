@@ -1,6 +1,3 @@
-const pkg = require("../package");
-
-
 module.exports = {
   filePath: process.env.FILE_PATH || "/tmp/access.log",
   traffic: {
