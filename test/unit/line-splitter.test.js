@@ -1,6 +1,6 @@
 const ls = require("../../lib/helpers/line-splitter");
 
-describe("test line splitter log", () => {
+describe("line splitter log", () => {
   "use strict";
 
   [
@@ -46,3 +46,18 @@ describe("test line splitter log", () => {
     });
   });
 });
+
+describe("line splitter getSection", () => {
+  [
+    { in: "/test", out: "test" },
+    { in: "/test/truc", out: "test" },
+    { in: "/test/truc/machin", out: "test" },
+    { in: "/test2", out: "test2" },
+    { in: "/", out: "" },
+  ].map((request) => {
+    test(`test ok ${request.in}`, () => {
+      expect(ls.getSection(request.in)).toEqual(request.out);
+    });
+  });
+});
+
