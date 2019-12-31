@@ -3,7 +3,7 @@
 ## run
 ### with docker
 - run in prod : 
-`docker run -v /tmp/access.log:/tmp/access.log pljarlegan/fox:1.0.0 -ti --env TRAFFIC_THRESHOLD_HIGH=10 --env TRAFFIC_ALERT_TIMEBOX_SEC=120 --env FILE_PATH=/tmp/access.log `
+`docker run -v /tmp/access.log:/tmp/access.log pljarlegan/fox:1.0.0 -ti --env "TERM=xterm-256color" --env TRAFFIC_THRESHOLD_HIGH=10 --env TRAFFIC_ALERT_TIMEBOX_SEC=120 --env FILE_PATH=/tmp/access.log `
 
 ### with docker-compose
 -  run in prod : 

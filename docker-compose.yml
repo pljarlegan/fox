@@ -8,6 +8,7 @@ services:
       - TRAFFIC_THRESHOLD_HIGH=10
       - TRAFFIC_ALERT_TIMEBOX_SEC=120
       - FILE_PATH=/tmp/access.log
+      - TERM=xterm-256color
     volumes:
       - /tmp/access.log:/tmp/access.log
     command: bash -c "npm start --prefix /home/node/app"
