@@ -26,7 +26,7 @@ const colors = require("colors"), // eslint-disable-line no-unused-vars
     }
   };
 
-readFile(config.filePath, (line) => addToStats(lineSplitter.log(line)));
+readFile(config.filePath, (line) => addToStats(lineSplitter.log(line))); // eslint-disable-line strict
 
 console.log("Current config : ".blue); // eslint-disable-line no-console
 console.log("- File to watch : ".blue + config.filePath.green); // eslint-disable-line no-console
