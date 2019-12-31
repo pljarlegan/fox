@@ -30,5 +30,7 @@ module.exports = class Section {
   getHits() {
     return this.log.length;
   }
-
+  getAllTimesHits() {
+    return this.status.ok + this.status.ko;
+  }
 };
