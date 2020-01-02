@@ -3,7 +3,7 @@ version: '3.5'
 services:
   fox:
     container_name: fox
-    image: pljarlegan/fox:1.0.0
+    image: pljarlegan/fox:1.0.1
     environment:
       - TRAFFIC_THRESHOLD_HIGH=1200
       - TRAFFIC_ALERT_TIMEBOX_SEC=120
