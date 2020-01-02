@@ -14,8 +14,8 @@ describe("stats-alerts", () => {
     const alerts = [];
     alerts.push("pif", "paf", "pouf");
     expect(sa.getAlerts(alerts)).isPrototypeOf(String);
-    expect(sa.getAlerts(alerts).split("\n").length).toEqual(4);
-    alerts.push("pwet");
     expect(sa.getAlerts(alerts).split("\n").length).toEqual(5);
+    alerts.push("pwet");
+    expect(sa.getAlerts(alerts).split("\n").length).toEqual(7);
   });
 });
