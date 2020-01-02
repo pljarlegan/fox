@@ -1,0 +1,17 @@
+version: '3.5'
+services:
+
+  fox:
+    container_name: fox
+    image: node:12
+    environment:
+      - TRAFFIC_THRESHOLD_HIGH=1200
+      - TRAFFIC_ALERT_TIMEBOX_SEC=120
+      - FILE_PATH=/tmp/access.log
+      - TERM=xterm-256color
+      - REFRESH_TIME_SEC=10
+    volumes:
+      - ./:/home/node/app
+      - /tmp/access.log:/tmp/access.log
+    command: bash -c "npm start --prefix /home/node/app"
+
