@@ -22,7 +22,7 @@ const colors = require("colors"), // eslint-disable-line no-unused-vars
     statsAlert.addAlert(stats, alerts, config.traffic.alertTimeBoxSec * 1000, config.traffic.thresholdHigh);
     const warnMsg = statsAlert.getAlerts(alerts);
     if (warnMsg !== "") {
-      console.log(warnMsg.red); // eslint-disable-line no-console
+      statsAlert.print(stats, alerts, config.traffic.alertTimeBoxSec * 1000);
     }
   };
 
