@@ -5,8 +5,8 @@ on: [push]
 jobs:
   build:
 
-    runs-on: node:12
-
+    runs-on: ubuntu-latest
+    
     steps:
     - uses: actions/checkout@v1
     - uses: borales/actions-yarn@v2.0.0
