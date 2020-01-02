@@ -32,9 +32,10 @@ console.log("Current config : ".blue); // eslint-disable-line no-console
 console.log("- File to watch : ".blue + config.filePath.green); // eslint-disable-line no-console
 console.log("- Threshold high : ".blue + config.traffic.thresholdHigh.toString().green); // eslint-disable-line no-console
 console.log("- Alert timeBox (sec.) : ".blue + config.traffic.alertTimeBoxSec.toString().green); // eslint-disable-line no-console
+console.log("- = threshold / sec : ".blue + `${config.traffic.thresholdHigh / config.traffic.alertTimeBoxSec}`.green); // eslint-disable-line no-console
 
 setInterval(() => {
   "use strict";
 
   statsAlert.print(stats, alerts, config.traffic.alertTimeBoxSec * 1000);
-}, 10 * config.refreshTimeSec);
+}, config.refreshTimeSec * 1000);
