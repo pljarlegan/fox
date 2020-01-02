@@ -9,6 +9,7 @@ services:
       - TRAFFIC_ALERT_TIMEBOX_SEC=120
       - FILE_PATH=/tmp/access.log
       - TERM=xterm-256color
+      - REFRESH_TIME_SEC=10
     volumes:
       - ./:/home/node/app
       - /tmp/access.log:/tmp/access.log

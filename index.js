@@ -37,4 +37,4 @@ setInterval(() => {
   "use strict";
 
   statsAlert.print(stats, alerts, config.traffic.alertTimeBoxSec * 1000);
-}, 10 * 1000);
+}, 10 * config.refreshTimeSec);

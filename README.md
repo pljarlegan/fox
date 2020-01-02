@@ -1,5 +1,12 @@
 # fox
 
+
+## env configs default values
+- TRAFFIC_THRESHOLD_HIGH=10  
+- TRAFFIC_ALERT_TIMEBOX_SEC=120  
+- FILE_PATH=/tmp/access.log  
+- REFRESH_TIME_SEC=10  
+
 ## run
 ### with docker
 - run in prod : 
@@ -13,9 +20,9 @@
 `docker-compose -f docker-compose.dev up`
 
 ### in dev
-- install dependency `yarn`
-- run test `yarn test`
-- run it ! `yarn start:dev`
-- clean code `yarn lint-fix`
-- build new wonderful docker img `yarn build`
+- install dependency `yarn`  
+- run test `yarn test`  
+- run it ! `yarn start:dev`  
+- clean code `yarn lint-fix`  
+- build new wonderful docker img `yarn build`  
 
